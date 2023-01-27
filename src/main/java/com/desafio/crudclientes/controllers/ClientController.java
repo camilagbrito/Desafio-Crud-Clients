@@ -24,4 +24,12 @@ public class ClientController {
         return service.findAll(pageable);
     }
 
+    @PostMapping
+    public ClientDTO insert(@RequestBody ClientDTO dto){
+        return service.insert(dto);
+    }
+
+
+
+
 }
