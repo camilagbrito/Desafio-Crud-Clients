@@ -15,6 +15,7 @@ import java.util.List;
 public class ClientService {
     @Autowired
     private ClientRepository repository;
+
     @Transactional(readOnly = true)
     public ClientDTO findById(Long id){
         Client client = repository.findById(id).get();
