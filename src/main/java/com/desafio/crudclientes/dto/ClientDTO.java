@@ -1,11 +1,7 @@
 package com.desafio.crudclientes.dto;
-
 import com.desafio.crudclientes.entities.Client;
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.PastOrPresent;
-
 import java.time.LocalDate;
 
 public class ClientDTO {
